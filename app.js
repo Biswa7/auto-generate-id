@@ -27,10 +27,10 @@ function todo() {
 }
 
     function listElements() {
-        mytable.innerHTML = '';
+        table.innerHTML = '';
         sarray.forEach(function(item, index)
         {
-          var row = table.insertRow(index);
+          var row = table.insertRow(index+1);
           var col1 = row.insertCell(0);
           var col2 = row.insertCell(1);
           var col3 = row.insertCell(2);
