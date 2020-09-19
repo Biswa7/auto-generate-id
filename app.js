@@ -42,14 +42,14 @@ sbt.addEventListener("click", function (event) {
 
 function listElements() {
   mytable.innerHTML = '';
-  mytable.style.border = "thin dotted #0000FF";
+  // mytable.style.border = "thin dotted #0000FF";
   addRow({
     id: "Id",
     fname: "Name",
     uname: "Uname",
     email: "Email",
     password: "Password"
-  });
+  }, 0 );
 
   sarray.forEach((item, index) => addRow(item, index+1));
 };
